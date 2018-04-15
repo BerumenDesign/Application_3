@@ -1,0 +1,91 @@
+.RFIcard {
+    padding: $global-padding;
+    ul#collapsing-tabs {
+        border: none;
+        background: none;
+    }
+    .button {
+        font-size: .85em;
+    }
+    .tabs-title a {
+        padding: 10px 20px;
+        margin-right: 5px;
+    }
+    .tabs-title > a:focus,
+    .tabs-title > a[aria-selected='true'] {
+        background: $white;
+        border-bottom: 2px solid lighten($primary-color, 10%);
+    }
+    #tab-responded .tabs-title a[aria-selected='true'] {
+        background: $success-color;
+        color: $white;
+        border-bottom: none;
+    }
+    #tab-open .tabs-title a[aria-selected='true'] {
+        background: $warning-color;
+        color: $white;
+        border-bottom: none;
+    }
+    #tab-overdue .tabs-title a[aria-selected='true'] {
+        background: $alert-color;
+        color: $white;
+        border-bottom: none;
+    }
+    .tabs-content {
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-top: 1px solid lighten($primary-color, 10%);
+        .success-tab {
+            background: $light-gray;
+            color: $medium-gray;
+            border-radius: 4px;
+            &:focus,
+            {
+                background: $success-color;
+                color: $white;
+            }
+            &:a[aria-selected='true'] {
+                background: $success-color;
+                color: $white;
+            }
+        }
+        .warning-tab {
+            background: $light-gray;
+            color: $medium-gray;
+            border-radius: 4px;
+            &:focus {
+                background: $warning-color;
+                color: $white;
+            }
+        }
+        .alert-tab {
+            background: $light-gray;
+            color: $medium-gray;
+            border-radius: 4px;
+            &:focus {
+                background: $alert-color;
+                color: $white;
+            }
+        }
+        .success-tab a[aria-selected='true'] {
+            background: $success-color;
+            color: $white;
+        }
+        .tabs-panel {
+            padding: 5px 0 0 0;
+            .tabs-content {
+                border: none;
+            }
+        }
+        table thead {
+            color: $dark-gray;
+            background: $white;
+            font-size: .8em;
+            border: none;
+        }
+        td {
+            font-size: 12px;
+        }
+    }
+}

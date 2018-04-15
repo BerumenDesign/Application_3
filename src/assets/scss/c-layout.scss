@@ -1,0 +1,208 @@
+th,
+td {
+    font-size: 12px !important;
+    text-align: left;
+}
+
+.top-bar {
+    .logo {
+        display: block;
+        background: darken($primary-color, 10%);
+        margin: 20px;
+        padding: 0 20px;
+    }
+    h5 {
+        line-height: 72px;
+        font-weight: bold;
+        color: $white;
+    }
+    a {
+        color: $medium-gray;
+        font-size: 1em;
+        font-size: calc(14px);
+    }
+    .button {
+        height: 37px;
+    }
+    .is-dropdown-submenu {
+        background: $white;
+        color: darken($primary-color, 25%);
+        a {
+            color: $primary-color !important;
+        }
+    }
+    .right {
+        padding-right: 20px;
+    }
+}
+
+.second-bar {
+    margin: 10px;
+    h6 {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    i {
+        line-height: 2em;
+    }
+}
+
+.search {
+    max-width: 300px;
+    background: red;
+}
+
+.main-panel-rfi {
+    background: lighten($primary-color, 53%);
+    padding: 20px 20px;
+    .breadcrumbs {
+        margin-left: 20px;
+    }
+    .RFIcard {
+        background: $white;
+    }
+}
+
+.small {
+    font-size: .75em;
+}
+
+.side-panel-rfi {
+    background: darken($primary-color, 35%);
+    padding: 10px 0;
+    header {
+        color: $white !important;
+    }
+}
+
+.marketing-site-footer {
+    text-align: left;
+}
+
+.nav-footer {
+    background: darken($primary-color, 35%);
+    display: block;
+    text-align: center;
+    padding: 10px 0 5px;
+    width: 100%;
+    a {
+        font-size: calc(14px);
+    }
+    li {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .copyright {
+        color: darken($primary-color, 10%);
+    }
+}
+
+.button.success {
+    color: $white !important;
+}
+
+.tabs-title {
+    font-weight: bold;
+    .success.button,
+    .tabs .is-active a,
+    .button.success {
+        color: $white !important;
+    }
+}
+
+.inside-form {
+    margin-left: -48px;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.alert {
+    color: $alert-color;
+}
+
+.warning {
+    color: $warning-color;
+}
+
+.success {
+    color: $success-color;
+}
+
+.disabled {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+}
+
+.white {
+    color: $white !important;
+}
+
+.hollow {
+    background: $white !important;
+    border: 1px solid $light-gray !important;
+}
+
+table {
+    vertical-align: top !important;
+}
+
+.table-scroll {
+    overflow-x: auto;
+    overflow-y: auto;
+    table {
+        width: 100% !important;
+        .button {
+            display: inline-block;
+            font-size: 14px !important;
+            margin: 0;
+        }
+        th {
+            font-size: 12px;
+        }
+        .td-tool {
+            min-width: 120px;
+        }
+    }
+}
+
+input {
+    margin-bottom: 5px !important;
+}
+
+.tool {
+    font-size: .8em !important;
+    line-height: 2.4em;
+    font-weight: bold;
+}
+
+.highcharts-title {
+    font-size: 12px !important;
+    font-weight: bolder;
+}
+
+.highcharts-credits {
+    display: none;
+}
+
+.container-y {
+    height: 100vh;
+    display: flex;
+}
+
+i {
+    font-size: 18px !important;
+}

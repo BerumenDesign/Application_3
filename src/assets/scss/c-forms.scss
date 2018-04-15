@@ -1,0 +1,355 @@
+.inside-modal {
+    padding: 0px 30px;
+    header {
+        margin-left: 10px;
+    }
+    label {
+        font-size: .9em;
+        font-weight: bold;
+        color: darken($primary-color, 20%);
+    }
+    .breadcrumbs {
+        margin-bottom: 0;
+        margin-left: 12px;
+    }
+    .button-group {
+        ul {
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}
+
+#formModal {
+    padding: 0;
+    p {
+        font-size: 12px;
+    }
+    td,
+    th {
+        padding: 10px;
+        text-align: center;
+        span {
+            font-size: 12px;
+        }
+    }
+    .top-bar {
+        background: lighten($primary-color, 50%);
+        font-size: .8em;
+        margin-bottom: 20px;
+        padding: 5px 10px 0 35px;
+        h1 {
+            font-family: oxygen, sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+        }
+        a {
+            font-weight: bold;
+            font-size: 1em;
+            color: $dark-gray;
+        }
+        .button {
+            margin-top: 10px;
+            border-radius: 0;
+        }
+        .close-form {
+            color: $dark-gray;
+            font-size: 32px;
+            float: right;
+            padding: 0;
+            margin: 5px 20px;
+        }
+    }
+    .rejected {
+        background: lighten($alert-color, 33%);
+        padding-top: 20PX;
+        padding-bottom: 20px;
+    }
+    form {
+        margin: 0 30px;
+    }
+    h3,
+    h4 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-family: oxygen, sans-serif;
+    }
+    h5 {
+        margin-bottom: 20px;
+    }
+    .switch {
+        display: inline;
+        margin-left: 20px;
+        margin-bottom: -10px;
+    }
+    .forward-panel {
+        position: absolute;
+        top: 88px;
+        box-shadow: 0 2px 10px #ccc;
+        border-radius: 0 0 5px 5px;
+    }
+    .switch-paddle {
+        margin-bottom: -10px;
+    }
+    .switch-active {
+        font-size: 16px;
+        color: $white;
+    }
+    .switch-inactive {
+        font-size: 16px;
+    }
+}
+
+.gray-panel {
+    background: $light-gray;
+    border: 1px solid $medium-gray;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    h6 {
+        color: $dark-gray;
+    }
+    .fa-times-circle {
+        color: $medium-gray;
+    }
+}
+
+.upload-dropzone {
+    background: lighten($primary-color, 50%);
+    border: 1px solid lighten($primary-color, 35%);
+    color: lighten($primary-color, 20%);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    .small {
+        font-size: .9em;
+        color: lighten($primary-color, 20%);
+        line-height: 0;
+    }
+    .upload-dropzone:hover {
+        background: lighten($primary-color, 55%);
+    }
+}
+
+.uploaded-docs {
+    background: lighten($light-gray, 5%);
+    border: 1px solid $medium-gray;
+    margin-bottom: -1px;
+    border-radius: 2px;
+    a {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        font-size: 12px;
+        .fa-trash {
+            display: inline-block;
+            float: right;
+        }
+    }
+}
+
+.form-area,
+.rejected_rfi {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    .button-group {
+        float: right;
+    }
+    span {
+        line-height: 32px;
+        color: $dark-gray;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    h5 {
+        color: $black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .tr-panel {
+        margin-bottom: 40px;
+    }
+    .tr-panel td {
+        padding: 30px 30px 20px 30px !important;
+        background: lighten($primary-color, 56%);
+    }
+    .tr-active td {
+        background: lighten($primary-color, 50%);
+        color: darken($primary-color, 20%);
+        font-weight: bold;
+    }
+    .tr-completed td {
+        background: lighten($success-color, 32%);
+        color: darken($success-color, 20%);
+        font-weight: bold;
+        span {
+            font-size: 12px;
+            line-height: 12px;
+            color: inherit !important;
+            .fa {
+                padding-right: 5px;
+            }
+        }
+    }
+    .tr-rejected td {
+        background: lighten($alert-color, 32%);
+        color: darken($alert-color, 20%);
+        font-weight: bold;
+        span {
+            font-size: 12px;
+            line-height: 12px;
+            color: inherit !important;
+            .fa {
+                padding-right: 5px;
+            }
+        }
+    }
+    .ready-close,
+    .confirm-reject {
+        background: lighten($primary-color, 50%);
+        border: 1px solid $primary-color;
+        padding: 10px;
+        height: 60px;
+        span {
+            font-size: 14px;
+            color: $primary-color;
+        }
+    }
+    .confirm-reject {
+        height: 100px;
+    }
+    .closing {
+        border: 1px solid $medium-gray;
+        padding: 10px;
+        h5 {
+            color: $primary-color;
+            line-height: 2em;
+        }
+    }
+    .closed,
+    .confirmed-closure,
+    .rejected-closure {
+        border: 1px solid $success-color;
+        padding: 10px;
+        background: lighten($success-color, 68%);
+        h5 {
+            color: $success-color;
+            line-height: 2em;
+        }
+        .hollow {
+            background: $white;
+        }
+    }
+    .confirmed-closure {
+        height: 60px;
+    }
+    .rejected-closure {
+        border: 1px solid $alert-color;
+        padding: 10px;
+        background: lighten($alert-color, 55%);
+        h5 {
+            color: $alert-color;
+            line-height: 2em;
+        }
+    }
+}
+
+.rejected_rfi {
+    background: lighten($alert-color, 55%);
+    border: 1px solid $alert-color;
+    display: block;
+    margin: 10px;
+    width: 780px;
+}
+
+.end-form {
+    margin: 10px 0;
+    text-align: right;
+    border-top: 1px solid $medium-gray;
+    padding: 20px !important;
+    width: 100%;
+    min-height: 70px;
+    .button-group {
+        float: right
+    }
+    a.success,
+    a.success:hover {
+        color: $white;
+    }
+}
+
+.action-button {
+    font-size: 12px !important;
+    color: $dark-gray !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.max-250 {
+    width: 250px;
+    text-align: left;
+}
+
+.message {
+    text-align: center;
+    .icon-message {
+        font-size: 60px !important;
+        margin: 20px;
+    }
+    header {
+        display: block;
+        padding: 30px;
+    }
+    footer {
+        padding: 30px;
+        .breadcrumbs {
+            margin: 0;
+            ul {
+                display: inline-block;
+            }
+            li {
+                float: none;
+                display: inline-block;
+            }
+        }
+    }
+    .button {
+        margin-top: 30px; 
+    }
+}
+
+.message-success {
+    header {
+        background: lighten($success-color, 38%);
+        border-bottom: 1px solid $success-color;
+    }
+    .icon-message {
+        color: $success-color;
+    }
+}
+.message-alert {
+    header {
+        background: lighten($alert-color, 35%);
+        border-bottom: 1px solid $alert-color;
+    }
+    .icon-message {
+        color: $alert-color;
+    }
+}
+.message-revised {
+    header {
+        background: lighten($medium-gray, 18%);
+        border-bottom: 1px solid $medium-gray;
+        h4{
+            color: $dark-gray !important;
+        }
+    }
+    .icon-message {
+        color: $dark-gray;
+    }
+}
